@@ -60,23 +60,24 @@ export function Projects() {
               key={p.name}
               className="group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-border bg-card/70 backdrop-blur-xl transition-transform hover:-translate-y-1"
             >
-              <div
-                className="relative aspect-[16/10] w-full overflow-hidden"
-                style={{
-                  background: `radial-gradient(120% 100% at 20% 0%, color-mix(in oklab, ${p.accent} 45%, transparent), transparent 70%), var(--muted)`,
-                }}
-                aria-hidden="true"
-              >
-                <div className="absolute inset-x-5 top-6 space-y-2">
-                  <div className="h-2.5 w-2/3 rounded-full bg-foreground/25" />
-                  <div className="h-2.5 w-1/2 rounded-full bg-foreground/15" />
-                </div>
-                <div className="absolute inset-x-5 bottom-5 grid grid-cols-3 gap-2">
-                  <div className="h-10 rounded-lg bg-background/50" />
-                  <div className="h-10 rounded-lg bg-background/35" />
-                  <div className="h-10 rounded-lg bg-background/50" />
-                </div>
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
+                <img
+                  src={p.image}
+                  alt={p.alt}
+                  loading="lazy"
+                  width={1280}
+                  height={800}
+                  className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div
+                  className="pointer-events-none absolute inset-0"
+                  style={{
+                    background: `radial-gradient(120% 100% at 20% 0%, color-mix(in oklab, ${p.accent} 22%, transparent), transparent 70%)`,
+                  }}
+                  aria-hidden="true"
+                />
               </div>
+
 
               <div className="flex min-w-0 flex-1 flex-col p-5 sm:p-6">
                 <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3">
