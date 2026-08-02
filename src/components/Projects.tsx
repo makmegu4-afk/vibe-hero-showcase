@@ -1,5 +1,9 @@
 import { ArrowUpRight } from "lucide-react";
 
+import launchproImg from "@/assets/project-launchpro.jpg";
+import neuroanalystImg from "@/assets/project-neuroanalyst.jpg";
+import studyflowImg from "@/assets/project-studyflow.jpg";
+
 const projects = [
   {
     name: "StudyFlow",
@@ -7,6 +11,8 @@ const projects = [
       "AI-платформа для персонализированного обучения. Строит индивидуальный трек и адаптирует материал под темп ученика.",
     tags: ["React", "OpenAI", "Supabase"],
     accent: "var(--neon-orange)",
+    image: studyflowImg,
+    alt: "Превью интерфейса AI-платформы StudyFlow",
   },
   {
     name: "НейроАналитик",
@@ -14,6 +20,8 @@ const projects = [
       "AI-сервис для анализа данных. Загружаете таблицы — получаете выводы, графики и готовый отчёт за минуты.",
     tags: ["Next.js", "Python", "LLM"],
     accent: "var(--neon-violet)",
+    image: neuroanalystImg,
+    alt: "Превью дашборда аналитики НейроАналитик",
   },
   {
     name: "LaunchPro",
@@ -21,8 +29,11 @@ const projects = [
       "Лендинг для продукта. Быстрая сборка, анимации и высокая конверсия на любых устройствах.",
     tags: ["Tailwind", "Motion", "Vercel"],
     accent: "var(--neon-cyan)",
+    image: launchproImg,
+    alt: "Превью лендинга LaunchPro",
   },
 ];
+
 
 export function Projects() {
   return (
