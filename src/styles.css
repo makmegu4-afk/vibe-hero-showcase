@@ -132,6 +132,69 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+.dark {
+  --background: oklch(0.17 0.012 285);
+  --foreground: oklch(0.97 0.005 285);
+  --card: oklch(0.22 0.015 285);
+  --card-foreground: oklch(0.97 0.005 285);
+  --muted: oklch(0.27 0.015 285);
+  --muted-foreground: oklch(0.72 0.012 285);
+  --secondary: oklch(0.3 0.018 285);
+  --border: oklch(1 0 0 / 12%);
+  --neon-orange: oklch(0.75 0.19 55);
+  --neon-violet: oklch(0.66 0.23 305);
+  --neon-cyan: oklch(0.82 0.13 195);
+}
+
+@theme inline {
+  --color-neon-orange: var(--neon-orange);
+  --color-neon-violet: var(--neon-violet);
+  --color-neon-cyan: var(--neon-cyan);
+}
+
+:root {
+  --neon-orange: oklch(0.75 0.19 55);
+  --neon-violet: oklch(0.66 0.23 305);
+  --neon-cyan: oklch(0.82 0.13 195);
+}
+
+@utility hero-stars {
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgb(255 255 255 / 0.5), transparent),
+    radial-gradient(1px 1px at 70% 15%, rgb(255 255 255 / 0.35), transparent),
+    radial-gradient(1.5px 1.5px at 45% 70%, rgb(255 255 255 / 0.4), transparent),
+    radial-gradient(1px 1px at 85% 60%, rgb(255 255 255 / 0.3), transparent),
+    radial-gradient(1px 1px at 10% 80%, rgb(255 255 255 / 0.25), transparent),
+    radial-gradient(1px 1px at 60% 90%, rgb(255 255 255 / 0.3), transparent);
+}
+
+@utility hero-glow {
+  background:
+    radial-gradient(60% 50% at 85% 40%, color-mix(in oklab, var(--neon-violet) 22%, transparent), transparent 70%),
+    radial-gradient(45% 40% at 10% 90%, color-mix(in oklab, var(--neon-orange) 14%, transparent), transparent 70%);
+}
+
+@utility text-neon-gradient {
+  background: linear-gradient(100deg, var(--neon-orange), var(--neon-violet));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility glow-orange {
+  box-shadow: 0 12px 40px -12px color-mix(in oklab, var(--neon-orange) 70%, transparent);
+}
+
+@utility glow-violet {
+  box-shadow: 0 12px 40px -12px color-mix(in oklab, var(--neon-violet) 60%, transparent);
+}
+
+@utility glow-card {
+  box-shadow:
+    0 30px 90px -40px color-mix(in oklab, var(--neon-violet) 80%, transparent),
+    0 0 0 1px color-mix(in oklab, var(--neon-violet) 12%, transparent);
+}
+
 @layer base {
   * {
     border-color: var(--color-border);
