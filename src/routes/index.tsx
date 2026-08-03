@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
+import { Services } from "@/components/Services";
 
 const title = "Вайбкодинг: AI-продукты, MVP и лендинги на заказ";
 const description =
