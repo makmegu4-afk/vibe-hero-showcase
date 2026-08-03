@@ -1,19 +1,20 @@
 import { ArrowUpRight } from "lucide-react";
 
+import billboardImg from "@/assets/project-billboard.jpg";
 import launchproImg from "@/assets/project-launchpro.jpg";
 import neuroanalystImg from "@/assets/project-neuroanalyst.jpg";
-import studyflowImg from "@/assets/project-studyflow.jpg";
 
 const projects = [
   {
-    name: "StudyFlow",
+    name: "CityBoards",
     description:
-      "AI-платформа для персонализированного обучения. Строит индивидуальный трек и адаптирует материал под темп ученика.",
-    tags: ["React", "OpenAI", "Supabase"],
+      "Лендинг для заказчиков рекламы на билбордах города. Карта свободных щитов, расчёт стоимости и заявка на бронирование в пару кликов.",
+    tags: ["React", "Mapbox", "Tailwind"],
     accent: "var(--neon-orange)",
-    image: studyflowImg,
-    alt: "Превью интерфейса AI-платформы StudyFlow",
+    image: billboardImg,
+    alt: "Превью лендинга для бронирования рекламы на билбордах города",
   },
+
   {
     name: "НейроАналитик",
     description:
