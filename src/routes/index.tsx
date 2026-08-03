@@ -28,6 +28,7 @@ function Index() {
   return (
     <main className="dark">
       <Hero />
+      <Services />
       <Projects />
     </main>
   );
