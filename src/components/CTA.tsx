@@ -23,7 +23,7 @@ export function CTA() {
 
             <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
               <a
-                href="https://t.me/"
+                href="https://t.me/test_bezz"
                 target="_blank"
                 rel="noreferrer"
                 className="glow-orange inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold text-background transition-transform hover:-translate-y-0.5"
@@ -33,7 +33,7 @@ export function CTA() {
                 Написать в Telegram
               </a>
               <a
-                href="mailto:hello@example.com"
+                href="mailto:testbezz@gmail.com"
                 className="glow-violet inline-flex items-center justify-center gap-2 rounded-full border px-7 py-3.5 text-sm font-semibold transition-transform hover:-translate-y-0.5"
                 style={{ borderColor: "var(--neon-violet)", color: "var(--neon-violet)" }}
               >
