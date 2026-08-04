@@ -29,7 +29,7 @@ const metrics = [
 
 export function Hero() {
   return (
-    <section className="hero-stars relative min-h-screen overflow-hidden bg-background text-foreground">
+    <section className="section-blend hero-stars relative min-h-screen overflow-hidden bg-background text-foreground">
       <div className="hero-glow pointer-events-none absolute inset-0" aria-hidden="true" />
 
       <div className="relative mx-auto w-full max-w-7xl px-5 py-6 sm:px-8">

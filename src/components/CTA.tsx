@@ -4,7 +4,7 @@ export function CTA() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-background py-20 text-foreground sm:py-28"
+      className="section-blend relative overflow-hidden bg-background py-20 text-foreground sm:py-28"
     >
       <div className="hero-glow pointer-events-none absolute inset-0" aria-hidden="true" />
       <div className="relative mx-auto w-full max-w-4xl px-5 sm:px-8">
