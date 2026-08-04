@@ -177,6 +177,9 @@ html {
     radial-gradient(1px 1px at 10% 80%, rgb(255 255 255 / 0.25), transparent),
     radial-gradient(1px 1px at 60% 90%, rgb(255 255 255 / 0.3), transparent);
   background-attachment: fixed;
+}
+
+
 
 @utility hero-glow {
   background:
