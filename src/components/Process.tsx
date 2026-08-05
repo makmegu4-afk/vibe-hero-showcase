@@ -49,7 +49,7 @@ export function Process() {
           </p>
         </div>
 
-        <ol className="relative mt-14 grid gap-10 lg:grid-cols-4 lg:gap-8">
+        <ol className="relative mt-12 grid gap-10 lg:grid-cols-4 lg:gap-8">
           {/* connector line */}
           <span
             aria-hidden="true"

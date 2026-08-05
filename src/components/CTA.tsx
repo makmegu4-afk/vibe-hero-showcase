@@ -7,8 +7,8 @@ export function CTA() {
       className="section-blend relative overflow-hidden bg-background py-6 text-foreground sm:py-10"
     >
       <div className="hero-glow pointer-events-none absolute inset-0" aria-hidden="true" />
-      <div className="relative mx-auto w-full max-w-4xl px-5 sm:px-8">
-        <div className="glow-card relative overflow-hidden rounded-3xl border border-border bg-card/60 px-6 py-12 text-center backdrop-blur sm:px-12 sm:py-16">
+      <div className="relative mx-auto w-full max-w-7xl px-5 sm:px-8">
+        <div className="glow-card relative mx-auto w-full max-w-4xl overflow-hidden rounded-3xl border border-border bg-card/60 px-6 py-10 text-center backdrop-blur sm:px-12 sm:py-14">
           <div className="hero-stars pointer-events-none absolute inset-0 opacity-50" aria-hidden="true" />
           <div className="relative">
             <span className="text-xs tracking-[0.3em] text-muted-foreground uppercase">
