@@ -84,16 +84,16 @@ export function Hero() {
               ))}
             </ul>
 
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-3">
               <a
                 href="#projects"
-                className="glow-orange inline-flex h-13 w-full items-center justify-center rounded-full bg-neon-orange px-8 text-sm font-semibold text-background transition-transform hover:-translate-y-0.5 sm:w-auto"
+                className="glow-orange inline-flex h-15 w-full items-center justify-center rounded-full bg-neon-orange px-8 text-base font-semibold text-background transition-transform hover:-translate-y-0.5 sm:h-13 sm:w-auto sm:text-sm"
               >
                 Посмотреть проекты
               </a>
               <a
                 href="#contact"
-                className="glow-violet inline-flex h-13 w-full items-center justify-center rounded-full border border-neon-violet/60 bg-neon-violet/10 px-8 text-sm font-semibold text-neon-violet transition-transform hover:-translate-y-0.5 sm:w-auto"
+                className="glow-violet inline-flex h-15 w-full items-center justify-center rounded-full border border-neon-violet/60 bg-neon-violet/10 px-8 text-base font-semibold text-neon-violet transition-transform hover:-translate-y-0.5 sm:h-13 sm:w-auto sm:text-sm"
               >
                 Связаться
               </a>
