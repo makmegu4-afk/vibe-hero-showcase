@@ -59,8 +59,8 @@ export function Projects() {
           {projects.map((p) => (
             <li
               key={p.name}
-              className="group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-border bg-card/70 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:border-transparent"
-              style={{ ["--card-accent" as string]: p.accent }}
+              className="project-card group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-border bg-card/70 backdrop-blur-xl hover:-translate-y-2 md:hover:scale-[1.02]"
+              style={{ ["--card-accent" as string]: p.accent } as React.CSSProperties}
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
                 <img
@@ -69,12 +69,12 @@ export function Projects() {
                   loading="lazy"
                   width={1280}
                   height={800}
-                  className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="size-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div
-                  className="pointer-events-none absolute inset-0"
+                  className="pointer-events-none absolute inset-0 opacity-70 transition-opacity duration-500 group-hover:opacity-100"
                   style={{
-                    background: `radial-gradient(120% 100% at 20% 0%, color-mix(in oklab, ${p.accent} 22%, transparent), transparent 70%)`,
+                    background: `radial-gradient(120% 100% at 20% 0%, color-mix(in oklab, ${p.accent} 32%, transparent), transparent 70%)`,
                   }}
                   aria-hidden="true"
                 />
@@ -83,9 +83,11 @@ export function Projects() {
 
               <div className="flex min-w-0 flex-1 flex-col p-5 sm:p-6">
                 <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3">
-                  <h3 className="truncate text-lg font-semibold">{p.name}</h3>
+                  <h3 className="truncate text-lg font-semibold transition-colors group-hover:text-[var(--card-accent)]">
+                    {p.name}
+                  </h3>
                   <ArrowUpRight
-                    className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-neon-orange"
+                    className="size-4 shrink-0 text-muted-foreground transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--card-accent)]"
                     aria-hidden="true"
                   />
                 </div>
