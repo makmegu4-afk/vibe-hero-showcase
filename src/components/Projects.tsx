@@ -1,3 +1,5 @@
+import type { CSSProperties } from "react";
+
 import { ArrowUpRight } from "lucide-react";
 
 import billboardImg from "@/assets/project-billboard.jpg";
