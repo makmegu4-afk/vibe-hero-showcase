@@ -30,9 +30,9 @@ function Index() {
   return (
     <main className="dark">
       <Hero />
+      <Projects />
       <Services />
       <Process />
-      <Projects />
       <CTA />
     </main>
   );
