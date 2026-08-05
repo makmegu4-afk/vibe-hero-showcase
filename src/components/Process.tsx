@@ -33,7 +33,7 @@ export function Process() {
   return (
     <section
       id="process"
-      className="section-blend relative overflow-hidden bg-background py-10 text-foreground sm:py-28"
+      className="section-blend relative overflow-hidden bg-background py-6 text-foreground sm:py-10"
     >
       <div className="hero-glow pointer-events-none absolute inset-0" aria-hidden="true" />
       <div className="relative mx-auto w-full max-w-7xl px-5 sm:px-8">

@@ -40,7 +40,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="section-blend hero-stars relative overflow-hidden bg-background py-10 text-foreground sm:py-28"
+      className="section-blend hero-stars relative overflow-hidden bg-background py-6 text-foreground sm:py-10"
     >
       <div className="relative mx-auto w-full max-w-7xl px-5 sm:px-8">
         <div className="max-w-2xl">
