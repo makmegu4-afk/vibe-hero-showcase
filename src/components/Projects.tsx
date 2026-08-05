@@ -55,11 +55,12 @@ export function Projects() {
           </p>
         </div>
 
-        <ul className="mt-12 grid gap-10 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+        <ul className="mt-12 grid gap-10 sm:grid-cols-2 sm:gap-6 md:grid-cols-3">
           {projects.map((p) => (
             <li
               key={p.name}
-              className="group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-border bg-card/70 backdrop-blur-xl transition-transform hover:-translate-y-1"
+              className="group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-border bg-card/70 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:border-transparent"
+              style={{ ["--card-accent" as string]: p.accent }}
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
                 <img
