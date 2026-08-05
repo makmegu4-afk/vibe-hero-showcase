@@ -29,7 +29,7 @@ const metrics = [
 
 export function Hero() {
   return (
-    <section className="section-blend hero-stars relative min-h-screen overflow-hidden bg-background text-foreground">
+    <section className="section-blend hero-stars relative overflow-hidden bg-background text-foreground">
       <div className="hero-glow pointer-events-none absolute inset-0" aria-hidden="true" />
 
       <div className="relative mx-auto w-full max-w-7xl px-5 py-6 sm:px-8">
@@ -56,7 +56,7 @@ export function Hero() {
           </div>
         </header>
 
-        <div className="grid items-center gap-12 py-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-8 lg:py-20">
+        <div className="grid items-center gap-10 py-6 sm:py-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-10">
           <div className="min-w-0">
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
               <Sparkles className="size-3.5 text-neon-orange" />
