@@ -62,7 +62,7 @@ export function Projects() {
             <li
               key={p.name}
               className="project-card group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-border bg-card/70 backdrop-blur-xl hover:-translate-y-2 md:hover:scale-[1.02]"
-              style={{ ["--card-accent" as string]: p.accent } as React.CSSProperties}
+              style={{ ["--card-accent" as string]: p.accent } as CSSProperties}
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
                 <img
